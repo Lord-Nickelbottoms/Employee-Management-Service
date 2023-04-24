@@ -7,6 +7,9 @@ import { FooterComponent } from './component/footer/footer.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CreateInsertComponent } from './pages/create-insert/create-insert.component';
+import { ViewSingleEmpComponent } from './pages/view-single-emp/view-single-emp.component';
+import { EditComponent } from './pages/edit/edit.component';
+import { ViewAllEmpComponent } from './pages/view-all-emp/view-all-emp.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { CreateInsertComponent } from './pages/create-insert/create-insert.compo
     FooterComponent,
     NavbarComponent,
     HomeComponent,
-    CreateInsertComponent
+    CreateInsertComponent,
+    ViewSingleEmpComponent,
+    EditComponent,
+    ViewAllEmpComponent,
   ],
   imports: [
     BrowserModule,
