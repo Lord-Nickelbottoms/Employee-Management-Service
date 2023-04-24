@@ -8,6 +8,7 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CreateInsertComponent } from './pages/create-insert/create-insert.component';
 import { WelcomeMessageComponent } from './component/welcome-message/welcome-message.component';
+import { AdminpicComponent } from './component/adminpic/adminpic.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WelcomeMessageComponent } from './component/welcome-message/welcome-mes
     NavbarComponent,
     HomeComponent,
     CreateInsertComponent,
-    WelcomeMessageComponent
+    WelcomeMessageComponent,
+    AdminpicComponent
   ],
   imports: [
     BrowserModule,
