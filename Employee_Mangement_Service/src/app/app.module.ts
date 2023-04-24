@@ -12,12 +12,9 @@ import { CreateInsertComponent } from './pages/create-insert/create-insert.compo
   declarations: [
     AppComponent,
     FooterComponent,
-<<<<<<< HEAD
-=======
     NavbarComponent,
     HomeComponent,
-    CreateInsertComponent,
->>>>>>> cbe4daf29c19b4a48ef7f055beeed9ad53a7ac78
+    CreateInsertComponent
   ],
   imports: [
     BrowserModule,
