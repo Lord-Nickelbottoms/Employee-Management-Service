@@ -5,11 +5,13 @@
     color: #EAE2B7;
     padding: 0;
     margin: 0;
+    height:70px;
  }
 
 /* html {
     font-size: 10px;
     width: 100%;
+   
     -webkit-tap-highlight-color: #003049;
 } */
 
@@ -22,6 +24,7 @@ nav .navbar .navbar-default {
     border-bottom: 1px solid #0d0c0c;
     background-color: #000000;
     background-color: #140303;
+ 
 
 }
 
@@ -54,4 +57,5 @@ nav .ul {
     margin-bottom: 10px;
     color: #EAE2B7;
  }
+ 
  
