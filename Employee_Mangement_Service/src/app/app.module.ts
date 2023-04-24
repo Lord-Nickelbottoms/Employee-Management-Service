@@ -7,6 +7,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CreateInsertComponent } from './pages/create-insert/create-insert.component';
+import { WelcomeMessageComponent } from './component/welcome-message/welcome-message.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CreateInsertComponent } from './pages/create-insert/create-insert.compo
     FooterComponent,
     NavbarComponent,
     HomeComponent,
-    CreateInsertComponent
+    CreateInsertComponent,
+    WelcomeMessageComponent
   ],
   imports: [
     BrowserModule,
