@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CreateInsertComponent } from './pages/create-insert/create-insert.component';
 import { WelcomeMessageComponent } from './component/welcome-message/welcome-message.component';
 import { AdminpicComponent } from './component/adminpic/adminpic.component';
+import { ViewEmployeesComponent } from './pages/view-employees/view-employees.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AdminpicComponent } from './component/adminpic/adminpic.component';
     HomeComponent,
     CreateInsertComponent,
     WelcomeMessageComponent,
-    AdminpicComponent
+    AdminpicComponent,
+    ViewEmployeesComponent
   ],
   imports: [
     BrowserModule,
