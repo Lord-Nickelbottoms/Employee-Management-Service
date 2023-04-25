@@ -11,7 +11,6 @@ import { CreateInsertComponent } from './pages/create-insert/create-insert.compo
 import { ViewSingleEmpComponent } from './pages/view-single-emp/view-single-emp.component';
 import { EditComponent } from './pages/edit/edit.component';
 import { ViewAllEmpComponent } from './pages/view-all-emp/view-all-emp.component';
-=======
 import { WelcomeMessageComponent } from './component/welcome-message/welcome-message.component';
 import { AdminpicComponent } from './component/adminpic/adminpic.component';
 >>>>>>> NyikoSec
