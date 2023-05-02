@@ -29,10 +29,13 @@ public class EmployeeController {
         return employeeRepo.findAll();
     }
 
-    @GetMapping(value = "/{id}")
-    public Optional<Employee> findOne(Employee employee) {
-        return employeeRepo.findById(employee.getEmp_num());
+    @GetMapping(value = "{id}")
+    public Employee findEmployee(@PathVariable int id) {
+        return employeeRepo.findById(id).get();
     }
+    //public Optional<Employee> findOne(@PathVariable "id" int getEmp_num ) {
+       // return employeeRepo.findById(employee.getEmp_num());
+    
 
     @PostMapping
     public Employee save(@Validated @NonNull @RequestBody Employee employee) {

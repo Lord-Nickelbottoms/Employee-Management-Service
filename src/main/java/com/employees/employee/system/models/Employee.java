@@ -10,6 +10,7 @@ public class Employee {
     private String firstName;
     private String surname;
     private String email;
+    private String emp_address;
     private String department;
     // private String contactNo;
 
@@ -17,11 +18,12 @@ public class Employee {
 
     }
 
-    public Employee(int id, String firstName, String lastName, String email, String department /*String contactNo*/) {
+    public Employee(int id, String firstName, String lastName, String email, String department, String emp_address) {
         this.emp_num = id;
         this.firstName = firstName;
         this.surname = lastName;
         this.email = email;
+        this.emp_address = emp_address;
         this.department = department;
         // this.contactNo = contactNo;
     }
@@ -63,7 +65,14 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
+public String getEmp_address() {
+        return emp_address;
 
+}
+
+    public void setEmp_address(String emp_address) {
+        this.emp_address = emp_address;
+    }    
 
     /* Department */
     public String getDepartment() {
