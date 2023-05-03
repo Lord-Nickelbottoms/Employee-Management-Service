@@ -6,4 +6,12 @@ import com.employees.employee.system.models.Employee;
 
 public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 
+    //Employee updateById(Employee employee, int id);
+
+    //Employee updateEmployee(Employee employee, int id);
+
+    //Employee updateById(Employee employee, int id);
+
+    
+
 }

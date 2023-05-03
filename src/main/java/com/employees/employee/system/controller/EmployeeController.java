@@ -1,8 +1,6 @@
 package com.employees.employee.system.controller;
 
 import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.validation.annotation.Validated;
@@ -12,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.lang.RuntimeException;
 
 import com.employees.employee.system.models.Employee;
 import com.employees.employee.system.repo.EmployeeRepo;
@@ -44,13 +44,26 @@ public class EmployeeController {
         return employeeRepo.save(employee);
     }
 
-    @PutMapping("/{id}")
-    public Employee update(@Validated @NonNull @RequestBody Employee employee) {
-        return employeeRepo.save(employee);
-    }
+    @PutMapping(value="{id}")
+    public Employee updateEmployee(@PathVariable int id, @RequestBody Employee employee) {
+        Employee emp = employeeRepo.findById(id).get();
+        
+        emp.setFirstName(employee.getFirstName());
+        emp.setFirstName(employee.getFirstName());
+        emp.setFirstName(employee.getFirstName());
+        emp.setFirstName(employee.getFirstName());
+        emp.setFirstName(employee.getFirstName());
+        return employeeRepo.save(emp);
 
+
+
+    //public Employee update(@Validated @NonNull @RequestBody Employee employee) {
+        //return employeeRepo.save(employee);
+    
+    }
     @DeleteMapping(value = "/{id}")
     public void delete(@PathVariable int id) {
         employeeRepo.deleteById(id);
     }
+
 }

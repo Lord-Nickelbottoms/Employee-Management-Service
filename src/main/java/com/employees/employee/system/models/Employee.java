@@ -83,6 +83,10 @@ public String getEmp_address() {
         this.department = department;
     }
 
+    //public Employee get() {
+       // return null;
+    }
+
 
     /* Contact Number */
     // public String getContactNo() {
@@ -92,4 +96,4 @@ public String getEmp_address() {
     // public void setContactNo(String contactNo) {
     //     this.contactNo = contactNo;
     // }
-}
+
